@@ -1,0 +1,12 @@
+/* hermano adyacente cercano */
+h2 + p {
+    color: red;
+}
+/* General Sibling */
+h2 ~ p {
+    color: blue;
+}
+/*child*/
+div > p {
+    color: green;
+}
