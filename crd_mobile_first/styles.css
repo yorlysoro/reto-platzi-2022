@@ -1,0 +1,80 @@
+/*
+Se acomdan en relacion a
+1. Posicionamineto
+2. Modelo Caja(box model)
+3. Tipografia 
+4. Visuales (box-shadow, boder-radius)
+5. Otros
+*/
+
+:root {
+    /*Colores*/
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #FFE9d5;
+    --secondary-blue: #1a94f7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #201e1c;
+    --black: #282623;
+    --grey: #bababa;
+    --of-white: #fafbf7;
+    --just-white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(
+        208.83deg,
+        var(--black) 16.69%,
+        var(--bitcoin-orange) 100%
+    );
+}
+
+header img {
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+.header---title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+.header---title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.header---title-container p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
