@@ -1,0 +1,35 @@
+/*CSS grid*/
+
+/* .contenedor {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-rows: 100px 200px;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    row-gap: 15px;
+    column-gap: 30px;
+    gap: 40px;
+} 
+*/
+
+/*Propiedades de alineacion*/
+.contenedor {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 150px 150px 150px;
+    grid-auto-rows: 150px;
+    height: 600px;
+    justify-content: center;
+    align-content: center;
+    place-content: end;
+    justify-items: end;
+    align-items: start;
+}
+
+.item {
+    border: 5px solid #00bcd4;
+    font-size: 4rem;
+}
