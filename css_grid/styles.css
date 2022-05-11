@@ -32,4 +32,5 @@
 .item {
     border: 5px solid #00bcd4;
     font-size: 4rem;
+    place-items: ;
 }
