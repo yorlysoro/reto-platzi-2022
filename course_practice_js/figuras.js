@@ -130,3 +130,53 @@ function calcularAreaTriangulo(){
     const medida = document.getElementById("medidadTriangulo");
     medida.innerHTML = "cm^2";
 }
+
+const currentDate = document.getElementById("currentDate");
+const date = Date.now();
+const dateFormat = new Date(date);
+currentDate.innerHTML = dateFormat;
+
+function calcularPerimitroCirculo(){
+    const input = document.getElementById("inputCirculo");
+    const value = parseFloat(input.value);
+    const result = perimitroCirculo(value);
+    const resultInput = document.getElementById("resultadoCirculo");
+    resultInput.value = "";
+    resultInput.value = result;
+    const medida = document.getElementById("medidaCirculo");
+    medida.innerHTML = "cm";
+}
+
+
+function calcularAreaCirculo(){
+    const input = document.getElementById("inputCirculo");
+    const value = parseFloat(input.value);
+    const result = AreaCirculo(value);
+    const resultInput = document.getElementById("resultadoCirculo");
+    resultInput.value = "";
+    resultInput.value = result;
+    const medida = document.getElementById("medidaCirculo");
+    medida.innerHTML = "cm^2";
+}
+
+function calcularDiametroCirculo(){
+    const input = document.getElementById("inputCirculo");
+    const value = parseFloat(input.value);
+    const result = diametroCirculo(value);
+    const resultInput = document.getElementById("resultadoCirculo");
+    resultInput.value = "";
+    resultInput.value = result;
+    const medida = document.getElementById("medidaCirculo");
+    medida.innerHTML = "cm";
+}
+
+function calcularCircunferenciaCirculo(){
+    const input = document.getElementById("inputCirculo");
+    const value = parseFloat(input.value);
+    const result = circunferenciaCirculo(value);
+    const resultInput = document.getElementById("resultadoCirculo");
+    resultInput.value = "";
+    resultInput.value = result;
+    const medida = document.getElementById("medidaCirculo");
+    medida.innerHTML = "cm";
+}
