@@ -180,3 +180,37 @@ function calcularCircunferenciaCirculo(){
     const medida = document.getElementById("medidaCirculo");
     medida.innerHTML = "cm";
 }
+
+
+function isoscelesTriangleHeight(side1, side2, side3){
+    var side = 0;
+    if(side1 === side2 && side3 < side1 && side3 < side2){
+        side = side1 ** 2;
+        base = side3 ** 2;
+        result = Math.sqrt(side - (base / 4));
+        return result;
+    } else {
+        alert("No es un triangulo isosceles");
+        return 0;
+    }
+}
+
+function calcularAlturaTrianguloIsoceles(){
+    const input1 = document.getElementById("inputTrianguloIsoceles1");
+    const value1 = parseFloat(input1.value);
+    const input2 = document.getElementById("inputTrianguloIsoceles2");
+    const value2 = parseFloat(input2.value);
+    const input3 = document.getElementById("baseTrianguloIsoceles");
+    const value3 = parseFloat(input3.value);
+    if (isNaN(value1) || isNaN(value2) || isNaN(value3)) {
+        alert("Ingrese valores validos");
+        return;
+    } else if  (value1 === 0 || value2 === 0 || value3 === 0) {
+        alert("Ingrese valores validos");
+        return;
+    }
+    const result = isoscelesTriangleHeight(value1, value2, value3);
+    const resultInput = document.getElementById("alturaTrianguloIsoceles");
+    resultInput.value = "";
+    resultInput.value = result;
+}

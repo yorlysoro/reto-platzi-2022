@@ -75,6 +75,28 @@
                     </label>
                 </form>
             </article>
+            <article>
+                <h2>Calcula la altura de un triangulo isoceles </h2>
+                <form action="inputTriangulo">
+                    <label for="inputTriangulo1">
+                        Escribe el primer lado del Triangulo:
+                        <input type="number" id="inputTrianguloIsoceles1" placeholder="lado1">
+                    </label>
+                    <label for="inputTriangulo2">
+                        Escribe el segundo lado del Triangulo:
+                        <input type="number" id="inputTrianguloIsoceles2" placeholder="lado2">
+                    </label>
+                    <label for="baseTriangulo">
+                        Escribe la base del Triangulo:
+                        <input type="number" id="baseTrianguloIsoceles" placeholder="base">
+                    </label>
+                    <label for="alturaTrianguloIsoceles">
+                        Altura del Triangulo:
+                        <input type="number" id="alturaTrianguloIsoceles" readonly>
+                    </label>
+                    <button type="button" onclick="calcularAlturaTrianguloIsoceles()">Calcular Altura</button>
+                </form>
+            </article>
         </section>
     </main>
     <footer>
