@@ -7,6 +7,61 @@
     <title>JavaScript</title>
 </head>
 <body>
+    <header>
+        <h1>Figuras geometricas</h1>
+        <p>Curso practico de JavaScript</p>
+    </header>
+
+    <section>
+        <article>
+            <h2>Calcula el area y permitro de un cuadrado  </h2>
+            <form action="inputCuadrado">
+                <label for="inputCuadrado">
+                    Escribe el lado del cuadrado:
+                    <input type="number" id="inputCuadrado">
+                    <button type="button" onclick="calcularPermitroCuadrado()">Calcular Perimetro</button>
+                    <button type="button" onclick="calcularAreaCuadrado()">Calcular Area</button>
+                </label>
+                <label for="resultadoCuadrado">
+                    Resultado:
+                    <input type="number" id="resultadoCuadrado" readonly>
+                    <b id="medidaCuadrado"></b>
+                </label>
+            </form>
+        </article>
+        <article>
+            <h2>Calcula el area y permitro de un triangulo  </h2>
+            <form action="inputTriangulo">
+                <label for="inputTriangulo1">
+                    Escribe el primer lado del Triangulo:
+                    <input type="number" id="inputTriangulo1" placeholder="lado1">
+                </label>
+                <label for="inputTriangulo2">
+                    Escribe el segundo lado del Triangulo:
+                    <input type="number" id="inputTriangulo2" placeholder="lado2">
+                </label>
+                <label for="baseTriangulo">
+                    Escribe la base del Triangulo:
+                    <input type="number" id="baseTriangulo" placeholder="base">
+                </label>
+                <label for="alturaTriangulo">
+                    Escribe la altura del Triangulo:
+                    <input type="number" id="alturaTriangulo" placeholder="altura">
+                </label>
+                <button type="button" onclick="calcularPermitroTriangulo()">Calcular Perimetro</button>
+                <button type="button" onclick="calcularAreaTriangulo()">Calcular Area</button>
+                <label for="resultadoTriangulo">
+                    Resultado:
+                    <input type="number" id="resultadoTriangulo" readonly>
+                    <b id="medidadTriangulo"></b>
+                </label>
+            </form>
+        </article>
+        <article>
+            
+        </article>
+    </section>
+    
     
 </body>
 <script src="./figuras.js"></script>
