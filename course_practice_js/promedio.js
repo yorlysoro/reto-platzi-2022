@@ -5,6 +5,7 @@ const lista1 = [
     500,
 ];
 
+
 function calcularMediaAritmetica(lista){
     // let sumaLista1 = 0;
 
