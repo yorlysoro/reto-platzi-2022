@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach</title>
+</head>
+<body>
+    <h1>ForEach</h1>
+    <div id="app">
+        <script>
+            const products = [
+                { name: 'Product 1', price: 10 },
+                { name: 'Product 2', price: 20 },
+                { name: 'Product 3', price: 30 },
+                { name: 'Product 4', price: 40 },
+                { name: 'Product 5', price: 50 },
+            ];
+
+            const app = document.getElementById('app');
+            products.forEach(product => {
+                const p = document.createElement('p');
+                p.innerHTML = `${product.name} - ${product.price}`;
+                app.appendChild(p);
+
+                //Class
+                app.innerHTML += `<li>${product.name} - ${product.price}</li>`;
+            });
+        </script>
+    </div>
+</body>
+</html>
