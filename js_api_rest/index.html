@@ -8,10 +8,26 @@
 </head>
 <body>
     <h1>Gatos</h1>
-    <button id="get" onclick="get_cat()">Obtener Gato</button>
-    <img id="img1" alt="foto_gato">
-    <img id="img2" alt="foto_gato">
-    <img id="img3" alt="foto_gato">
+    <span id="error"></span>
+    <section id="randomMichis">
+        <h2>Random Michis</h2>
+        <article>
+            <img id="img1" alt="foto_gato" width="250" height="250">
+            <button id="btn1" onclick="saveFavourites();">Guardar Michi en favoritos</button>
+        </article>
+        <article>
+            <img id="img2" alt="foto_gato" width="250" height="250">
+            <button id="btn2" onclick="saveFavourites();">Guardar Michi en favoritos</button>
+        </article>
+        <button id="get" onClick="get_cat();">Recargar</button>
+    </section>
+    <section id="favoritesMichis">
+        <h2>Favorites Michis</h2>
+        <article>
+            <img id="img4" alt="foto_gato" width="250" height="250">
+            <button>Eliminar Michi de favoritos</button>
+        </article>
+    </section>
     <script src="./main.js"></script>
 </body>
 </html>
