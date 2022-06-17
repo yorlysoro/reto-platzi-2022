@@ -1,0 +1,11 @@
+{
+  "name": "js_api_rest_practice",
+  "version": "1.0.0",
+  "description": "course javascript api rest practice ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yorlysoro",
+  "license": "ISC"
+}
